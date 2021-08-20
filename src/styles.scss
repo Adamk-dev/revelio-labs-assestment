@@ -1,0 +1,147 @@
+$base-text-color: #fe7139;
+$link-color: #ccc;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+h1 {
+  text-align: start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.heading {
+      font-weight: bold;
+    }
+
+.loading {
+  text-align: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: -50px;
+  margin-right: 20px;
+}
+
+
+.active {
+  font-weight: bold;
+ 
+    color: $base-text-color !important;
+
+}
+
+
+
+
+  .darkMode {
+  
+    
+    background-color: rgba(0, 0, 0, 0.808);
+    width: 100vw;
+    height: 100%;
+    color: #fff;
+
+
+    .story .story-title a:link, .story .story-title a:visited  .heading {
+      color: #fff !important;
+
+    }
+  }
+
+
+
+.nav-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  a {
+    margin: 10px;
+    text-transform: uppercase;
+    color: inherit;
+    letter-spacing: 2px;
+
+  }
+
+  
+}
+
+.story {
+  width: 100vw;
+ 
+  border-radius: 5px;
+  padding: 5px;
+
+  .story-title {
+    margin-bottom: 4px;
+    font-weight: bold;
+  
+    font-size: 20px;
+    a:link,
+    a:visited {
+      color: #000;
+    
+    }
+
+    a:hover,
+    a:active {
+      text-decoration: none;
+    color: $base-text-color;
+      
+    }
+  }
+
+  .story-info {
+    color: $link-color;
+    span {
+      margin: 4px;
+    }
+    a {
+      color: inherit;
+    }
+  }
+}
+
+
+.border-top {
+  border-top-width: 1px !important;
+  border-top-color:  $base-text-color !important;
+}
+
+.dark-mode-icon {
+  justify-content: center;
+    align-content: flex-end;
+    flex: 1;
+    display: flex;
+    margin-top: 20;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    flex-direction: column;
+  }
+  .story {
+    width: 90%;
+  }
+}
